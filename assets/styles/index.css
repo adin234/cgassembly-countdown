@@ -1,0 +1,100 @@
+html {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85b2d3+0,a7c7dc+100 */
+    background: #85b2d3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #85b2d3 0%, #a7c7dc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#85b2d3), color-stop(100%,#a7c7dc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #85b2d3 0%,#a7c7dc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85b2d3', endColorstr='#a7c7dc',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+    overflow: hidden;
+}
+
+#header .character {
+    font-size: 64px;
+    display: inline-block;
+    font-weight: bold;
+    color: #000000;
+    
+    transition: 
+        color 1s ease-out,
+        font-size 3s ease-out;
+}
+
+#header .character.hide:not(.space) {
+    color: rgba(0, 0, 0, 0.0); 
+    -webkit-text-stroke: 2px black;
+}
+
+.slideshow {
+    z-index: -1;
+    border: 5px solid #ffffff;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#header.large .character {
+    font-size: 142px;
+    -webkit-text-stroke: 2px white;
+
+}
+
+#header .character.space {
+    width: 20px;
+}
+
+#header {
+    display: block;
+    text-align: center;
+    transition: all 3s ease-out;
+}
+
+#body {}
+
+#body .abbv {
+    position: absolute;
+    text-align: center; 
+    -webkit-text-stroke: 2px white;
+    transition: 
+        top 1s,
+        opacity 1s
+}
+
+#body .abbv.shown {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#body .abbv .letter {
+    display: block;
+    font-size: 200px;
+    font-weight:bold;
+    -webkit-text-stroke: 2px white;
+    line-height: 120px;
+}
+
+#body .abbv .label {
+    -webkit-text-stroke: 2px white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 44px;
+    color: #A72828;
+    text-shadow: 2px 2px #000000;
+}
+
+.space {
+    content: ' '
+}
