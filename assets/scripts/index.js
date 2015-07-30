@@ -119,7 +119,7 @@ function startSlideShow () {
 
                 toggleClass(elem, 'slideshow');
                 
-                elem.src='/assets/images/'+i+'.jpg';
+                elem.src='./assets/images/'+i+'.jpg';
                 elem.style.position = 'absolute';
                 elem.style.top = '-1000px';
                 elem.style.left = '-1000px';
@@ -133,7 +133,7 @@ function startSlideShow () {
                         elem.style.top = (Math.floor((Math.random() * (body.offsetHeight - elem.offsetHeight)))+1)+'px';
                     }, 500);
                 }(elem));    
-            }, (1200*(7-i)));
+            }, (1250*(7-i)));
         }(i));
     }
 }
