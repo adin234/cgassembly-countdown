@@ -65,7 +65,7 @@ function generateEndTime () {
     
     return moment().set({
         hours: 18,
-        minutes: 00,
+        minutes: 30,
         seconds: 00
     });
 
