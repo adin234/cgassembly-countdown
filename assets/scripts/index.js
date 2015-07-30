@@ -61,13 +61,13 @@ function goAnimate (count) {
 var temp = moment().add('seconds', 16);
 
 function generateEndTime () {
-    return moment(temp.valueOf());
+    //return moment(temp.valueOf());
     
-    /*return moment().set({
+    return moment().set({
         hours: 18,
         minutes: 00,
         seconds: 00
-    });*/
+    });
 
 }
 
