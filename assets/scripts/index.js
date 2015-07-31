@@ -99,7 +99,7 @@ function endAnimation () {
     var el = document.getElementById('header'),
         body = document.getElementsByTagName('body')[0];
 
-    el.style['margin-top'] = (body.offsetHeight - el.offsetHeight)/2;
+    el.style['margin-top'] = (body.offsetHeight - el.offsetHeight)/28;
 
     addClass(el, 'large');
 }
@@ -109,7 +109,7 @@ function startSlideShow () {
         body = document.getElementsByTagName('body')[0],
         i;
 
-    for (i=7; i>0; i--) {
+    for (i=8; i>-1; i--) {
         (function (i) {
             setTimeout(function() {
                 var elem = document.createElement('img'),
@@ -133,7 +133,7 @@ function startSlideShow () {
                         elem.style.top = (Math.floor((Math.random() * (body.offsetHeight - elem.offsetHeight)))+1)+'px';
                     }, 500);
                 }(elem));    
-            }, (1250*(7-i)));
+            }, (1000*(8-i)));
         }(i));
     }
 }
