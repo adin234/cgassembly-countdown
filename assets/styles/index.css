@@ -1,13 +1,5 @@
 html {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85b2d3+0,a7c7dc+100 */
-    background: #85b2d3; /* Old browsers */
-    background: -moz-linear-gradient(top,  #85b2d3 0%, #a7c7dc 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#85b2d3), color-stop(100%,#a7c7dc)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #85b2d3 0%,#a7c7dc 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #85b2d3 0%,#a7c7dc 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85b2d3', endColorstr='#a7c7dc',GradientType=0 ); /* IE6-9 */
+    background: #000000;
 }
 
 body {
@@ -18,8 +10,8 @@ body {
     font-size: 64px;
     display: inline-block;
     font-weight: bold;
-    color: #000000;
-    
+    color: orange;
+    -webkit-text-stroke: 2px #A72828;
     transition: 
         color 1s ease-out,
         font-size 3s ease-out;
@@ -27,7 +19,7 @@ body {
 
 #header .character.hide:not(.space) {
     color: rgba(0, 0, 0, 0.0); 
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #A72828;
 }
 
 .slideshow {
@@ -41,10 +33,21 @@ body {
 
 #header.large .character {
     font-size: 142px;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #A72828;
 
 }
 
+.fire {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 80px/normal;
+    color: rgb(255, 255, 255);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 20px rgb(254,252,201) , 10px -10px 30px rgb(254,236,133) , -20px -20px 40px rgb(255,174,52) , 20px -40px 50px rgb(236,118,12) , -20px -60px 60px rgb(205,70,6) , 0 -80px 70px rgb(151,55,22) , 10px -90px 80px rgb(69,27,14) ;
+}
 #header .character.space {
     width: 20px;
 }
@@ -73,15 +76,15 @@ body {
 
 #body .abbv .letter {
     display: block;
-    font-size: 200px;
+    font-size: 250px;
     font-weight:bold;
     -webkit-text-stroke: 2px white;
-    line-height: 120px;
+    line-height: 140px;
 }
 
 #body .abbv .label {
     -webkit-text-stroke: 2px white;
-    font-size: 45px;
+    font-size: 65px;
     font-weight: bold;
 }
 
